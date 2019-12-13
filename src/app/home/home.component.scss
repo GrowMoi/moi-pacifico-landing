@@ -1,0 +1,48 @@
+$primary: #00366a;
+$secondary: #079fde;
+$tertiary: #f06a6b;
+$light-rose: #ff9898;
+$shadow-blue: #0363a6;
+
+.home-container {
+
+  .header {
+    background: $primary;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10%;
+
+    .bp-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .actions {
+      display: flex;
+
+      .btn {
+        width: 50px;
+        text-align: center;
+        font-family: Moi-Title;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+        min-width: 80px;
+      }
+
+      .btn-tutor {
+        background: $light-rose;
+        color: white;
+        border-bottom: 5px solid $tertiary;
+      }
+
+      .btn-player {
+        background: $secondary;
+        color: white;
+        border-bottom: 5px solid $shadow-blue;
+      }
+    }
+  }
+
+}
