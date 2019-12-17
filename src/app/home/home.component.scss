@@ -73,6 +73,26 @@ $light-blue: #089fde;
     }
   }
 
+  .panel-description {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .description {
+      width: 25%;
+      text-align: justify;
+      font-family: Moi-Title;
+    }
+  }
+
+  .devider {
+    background-image: url(../../assets/images/divisores.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 60px;
+  }
+
   .panel-instructions {
     text-align: center;
     font-family: Moi-Title;
