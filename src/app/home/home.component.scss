@@ -17,7 +17,9 @@ $light-blue: #089fde;
       display: flex;
       align-items: center;
     }
+  }
 
+  .header, .footer {
     .actions {
       display: flex;
 
@@ -44,6 +46,18 @@ $light-blue: #089fde;
         border-bottom: 5px solid $shadow-blue;
       }
     }
+  }
+
+  .footer {
+    background-image: url(../../assets/images/footer.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
   }
 
   .panel-app {
@@ -96,6 +110,7 @@ $light-blue: #089fde;
   .panel-instructions {
     text-align: center;
     font-family: Moi-Title;
+    margin-bottom: 40px;
 
     h3 {
       color: #00366a;
