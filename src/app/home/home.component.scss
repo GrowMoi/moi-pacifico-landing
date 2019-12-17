@@ -6,6 +6,7 @@ $shadow-blue: #0363a6;
 $light-blue: #089fde;
 
 .home-container {
+  position: relative;
 
   .header {
     background: $primary;
@@ -16,6 +17,10 @@ $light-blue: #089fde;
     .bp-icon {
       display: flex;
       align-items: center;
+
+      img  {
+        height: 40px;
+      }
     }
   }
 
@@ -59,6 +64,8 @@ $light-blue: #089fde;
     justify-content: space-evenly;
     align-items: center;
     color: white;
+    position: absolute;
+    bottom: -10%;
 
     .credits {
       font-size: 10px;
