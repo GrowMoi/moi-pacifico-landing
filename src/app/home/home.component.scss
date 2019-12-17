@@ -3,6 +3,7 @@ $secondary: #079fde;
 $tertiary: #f06a6b;
 $light-rose: #ff9898;
 $shadow-blue: #0363a6;
+$light-blue: #089fde;
 
 .home-container {
 
@@ -68,6 +69,33 @@ $shadow-blue: #0363a6;
         img {
           cursor: pointer;
         }
+      }
+    }
+  }
+
+  .panel-instructions {
+    text-align: center;
+    font-family: Moi-Title;
+
+    h3 {
+      color: #00366a;
+    }
+
+    .instructions {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+
+      .instruction {
+        background-color: $light-blue;
+        color: white;
+        height: 50px;
+        width: 160px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
       }
     }
   }
