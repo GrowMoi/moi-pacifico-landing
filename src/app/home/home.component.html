@@ -49,8 +49,8 @@
         <span>Mide sus avances</span>
       </div>
       <div class="label-form">Solicita un usuario:</div>
-      <form>
-        <input type="email" class="email-input" placeholder="tucorreo@email.com" name="email">
+      <form #requestUser = "ngForm" (ngSubmit)="onClickSubmit(requestUser.value)">
+        <input type="email" class="email-input" placeholder="tucorreo@email.com" name="email" ngModel>
         <input type="submit" class="btn-submit" value="Enviar">
       </form>
     </div>
