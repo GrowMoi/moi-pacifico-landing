@@ -38,6 +38,10 @@ $light-blue: #089fde;
         cursor: pointer;
         min-width: 80px;
         text-decoration: none;
+
+        &:hover {
+          opacity: 0.9;
+        }
       }
 
       .btn-tutor {
