@@ -51,7 +51,7 @@
       <div class="label-form">Solicita un usuario:</div>
       <form #requestUser = "ngForm" (ngSubmit)="onClickSubmit(requestUser.value); requestUser.reset()">
         <input type="email" class="email-input" placeholder="tucorreo@email.com" name="email" required ngModel>
-        <input type="submit" class="btn-submit" value="Enviar">
+        <button type="submit" class="btn-submit">Enviar</button>
       </form>
     </div>
   </div>
