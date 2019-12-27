@@ -14,8 +14,10 @@ export class HomeComponent implements OnInit {
   }
 
   onClickSubmit(data) {
-    this.http.post<any>('/api/send_emails', {email: data.email}).subscribe((res) => {
-      console.log(res);
-    });
+    if (data.email.length) {
+      this.http.post<any>('/api/send_emails', {email: data.email}).subscribe((res) => {
+        console.log(res);
+      });
+    }
   }
 }

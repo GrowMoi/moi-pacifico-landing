@@ -41,7 +41,7 @@
       </div>
     </div>
   </div>
-  <div class="panele-form">
+  <div class="panel-form">
     <div class="form">
       <h3>Familiares y Profesores</h3>
       <div class="instruction">
@@ -49,8 +49,8 @@
         <span>Mide sus avances</span>
       </div>
       <div class="label-form">Solicita un usuario:</div>
-      <form #requestUser = "ngForm" (ngSubmit)="onClickSubmit(requestUser.value)">
-        <input type="email" class="email-input" placeholder="tucorreo@email.com" name="email" ngModel>
+      <form #requestUser = "ngForm" (ngSubmit)="onClickSubmit(requestUser.value); requestUser.reset()">
+        <input type="email" class="email-input" placeholder="tucorreo@email.com" name="email" required ngModel>
         <input type="submit" class="btn-submit" value="Enviar">
       </form>
     </div>

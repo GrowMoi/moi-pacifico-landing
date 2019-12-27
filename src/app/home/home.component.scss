@@ -7,6 +7,7 @@ $light-blue: #089fde;
 
 .home-container {
   position: relative;
+  display: block;
 
   .header {
     background: $primary;
@@ -36,8 +37,8 @@ $light-blue: #089fde;
         margin: 5px;
         border-radius: 3px;
         cursor: pointer;
-        min-width: 80px;
         text-decoration: none;
+        min-width: 65px;
 
         &:hover {
           opacity: 0.9;
@@ -70,6 +71,7 @@ $light-blue: #089fde;
     color: white;
     position: absolute;
     bottom: -10%;
+    flex-wrap: wrap;
 
     .credits {
       font-size: 10px;
@@ -83,17 +85,21 @@ $light-blue: #089fde;
     min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10%;
+    // padding: 5% 5% 0 5%;
     align-items: center;
     justify-content: center;
 
     .preview-app {
-      height: 32vh;
-      padding: 10px 50px 60px 50px;
+      // height: 32vh;
+      // padding: 10px 50px 60px 50px;
+      width: 100%;
+      height: auto;
+      max-width: 24rem;
     }
 
     .store-container {
       color: white;
+      padding-left: 20px;
 
       h2 {
         font-family: Moi-Title;
@@ -121,11 +127,20 @@ $light-blue: #089fde;
     justify-content: space-evenly;
     align-items: center;
     padding: 40px 0;
+    flex-wrap: wrap;
 
     .description {
-      width: 25%;
       text-align: justify;
+      padding: 0 10px;
+      word-break: break-word;
+      max-width: 342px;
       // font-family: Moi-Title;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 18rem;
     }
   }
 
@@ -151,7 +166,7 @@ $light-blue: #089fde;
       display: flex;
       width: 100%;
       justify-content: center;
-
+      flex-wrap: wrap;
 
       .instruction {
         background-color: $light-blue;
@@ -163,15 +178,17 @@ $light-blue: #089fde;
         align-items: center;
         padding: 10px 20px;
         border-radius: 5px;
+        margin-bottom: 10px;
 
         &.middle {
-          margin: 0 20px;
+          margin-left: 20px;
+          margin-right: 20px;
         }
       }
     }
   }
 
-  .panele-form {
+  .panel-form {
     background-image: url(../../assets/images/imagen_familiares.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,9 +245,9 @@ $light-blue: #089fde;
           color: white;
           border-color: $shadow-blue;
           border-width: 0 0 5px 0;
+          outline: none;
         }
       }
     }
   }
-
 }
