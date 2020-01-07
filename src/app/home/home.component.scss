@@ -75,6 +75,13 @@ $light-blue: #089fde;
 
     .credits {
       font-size: 10px;
+
+      .moi-link {
+        text-decoration: none;
+        color: $light-rose;
+        font-weight: bold;
+      }
+
     }
   }
 
