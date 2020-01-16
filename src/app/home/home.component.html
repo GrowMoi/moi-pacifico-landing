@@ -1,0 +1,68 @@
+<div class="home-container">
+  <div class="header">
+    <a class="bp-icon" href="https://www.bancodelpacifico.com/" target="_blank">
+      <img src="../../assets/images/logo-bp.png">
+    </a>
+    <div class="actions">
+      <a class="btn btn-tutor" href="http://backend.miaulabdp.com/admin">Tutor</a>
+      <a class="btn btn-player" href="http://aula.miaulabdp.com">Jugar</a>
+    </div>
+  </div>
+  <div class="panel-app">
+    <img class="preview-app" src="../../assets/images/imagen_banner.png">
+    <div class="store-container">
+      <h2>Mi Aula Bdp</h2>
+      <p>Descargala en:</p>
+      <div class="buttons">
+        <img class="google-play" src="../../assets/images/btn-googleplay.png">
+        <img class="app-store" src="../../assets/images/btn-appstore.png">
+      </div>
+    </div>
+  </div>
+  <div class="panel-description">
+    <div class="description">Mi Aula BdP ayuda a niños y niñas a aprender conceptos básicos de educación financiera que sirven para toda la vida.</div>
+    <img src="../../assets/images/ninios_alegres.png">
+  </div>
+  <div class="devider"></div>
+  <div class="panel-instructions">
+    <h3>Instrucciones</h3>
+    <div class="instructions">
+      <div class="instruction">
+        <img src="../../assets/images/Instruccion_icono_pc.png">
+        <span>Abre en Pc o descarga</span>
+      </div>
+      <div class="instruction middle">
+        <img src="../../assets/images/Instruccion_icono_usuario.png">
+        <span>Crea un Usuario</span>
+      </div>
+      <div class="instruction">
+        <img src="../../assets/images/Instruccion_icono_premio.png">
+        <span>Aprende y gana premios</span>
+      </div>
+    </div>
+  </div>
+  <div class="panel-form">
+    <div class="form">
+      <h3>Familiares y Profesores</h3>
+      <div class="instruction">
+        <img src="../../assets/images/Instruccion_icono_avance.png">
+        <span>Mide sus avances</span>
+      </div>
+      <div class="label-form">Solicita un usuario:</div>
+      <form #requestUser = "ngForm" (ngSubmit)="onClickSubmit(requestUser.value); requestUser.reset()">
+        <input type="email" class="email-input" placeholder="tucorreo@email.com" name="email" required ngModel>
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="credits">
+      Desarrollado por <a class="moi-link" href="https://growmoi.com/" target="_blank">
+      Moi Aprendizaje Social</a> para Banco del Pacífico
+    </div>
+    <div class="actions">
+      <a class="btn btn-tutor" href="http://backend.miaulabdp.com/admin">Tutor</a>
+      <a class="btn btn-player" href="http://aula.miaulabdp.com">Jugar</a>
+    </div>
+  </div>
+</div>
