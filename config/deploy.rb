@@ -9,7 +9,6 @@ set :temp_dir, "/tmp"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-set :branch, ENV['BRANCH'] || 'master'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/growmoi/moi-pacifico-landing"
