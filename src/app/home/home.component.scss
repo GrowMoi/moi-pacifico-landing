@@ -84,6 +84,21 @@ $light-blue: #089fde;
       }
 
     }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &.selected {
+          color: $light-rose;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .panel-app {
