@@ -63,8 +63,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "moi-pacifico-landing:build",
-            "proxyConfig": "src/proxy.conf.json"
+            "browserTarget": "moi-pacifico-landing:build"
           },
           "configurations": {
             "production": {
