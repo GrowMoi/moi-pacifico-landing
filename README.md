@@ -19,7 +19,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 make sure you bundle the project, and then build locally as capistrano will copy all the local files to the remote server
 
 ```
-$ ng build --prod
+$ ng build --prod # ./node_modules/\@angular/cli/bin/ng build --prod
 $ bundle exec cap production deploy
 ```
 
