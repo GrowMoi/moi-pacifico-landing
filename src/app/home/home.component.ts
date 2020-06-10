@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
 
   onClickSubmit(data) {
     if (data.email.length) {
-      this.http.post<any>('http://backend.miaulabdp/api/send_emails', {email: data.email}).subscribe((res) => {
+      this.http.post<any>('https://backend.miaulabdp/api/send_emails', {email: data.email}).subscribe((res) => {
         console.log(res);
       }, error => {
         console.log('error: ', error);
